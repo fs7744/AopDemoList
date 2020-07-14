@@ -1,4 +1,6 @@
-﻿namespace Aop.Roslyn.Jit
+﻿using System;
+
+namespace Aop.Roslyn.Jit
 {
     class Program
     {
@@ -9,6 +11,10 @@
             //TestProxyGenerator.Test();
 
             TestProxyJit.Test();
+
+            //new RealClassProxy().Add(5, 10);
+
+            Console.ReadKey();
         }
     }
 }
